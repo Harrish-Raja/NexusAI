@@ -9,6 +9,19 @@ BreachWatch AI helps a security operations desk triage open incidents and meet i
 - runs a five-agent assessment that stops for the Data Protection Officer (DPO) before anything is filed
 - serves all of this through a REST API and a Streamlit dashboard
 
+### How each part works (start here)
+
+Read these in order. Each one explains its part of the system from scratch:
+
+| # | Part | Guide |
+|---|---|---|
+| 1 | Data preprocessing | [data_pipeline/README.md](data_pipeline/README.md) |
+| 2 | Machine learning (harm, effort and attack models) | [modeling/README.md](modeling/README.md) |
+| 3 | RAG: knowledge base and response chat | [knowledge/README.md](knowledge/README.md) |
+| 4 | LangGraph agent workflow and tools | [agentic/README.md](agentic/README.md) |
+| 5 | FastAPI backend, sign-in and database | [api/README.md](api/README.md) |
+| 6 | Streamlit dashboard: what to do on each page and tab | [dashboard/README.md](dashboard/README.md) |
+
 The project must pass all 50 tests in `tests.py`. **Nobody edits `tests.py` or `config/config.py`.**
 
 ---
